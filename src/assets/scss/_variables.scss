@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root{
+
+  // FONTS
+
+  --font_primary : 'Josefin Sans', sans-serif;
+
+  // COLORS
+  
+  // Lightmode
+  
+  --very_light_gray : hsl(0, 0%, 98%);
+  --very_light_grayish_blue : hsl(236, 33%, 92%);
+  --light_grayish_blue: hsl(233, 11%, 84%);
+  --dark_grayish_blue: hsl(236, 9%, 61%);
+  --very_dark_grayish_blue : hsl(235, 19%, 35%);
+  
+  // darkmode
+  
+  --very_dark_blue: hsl(235, 21%, 11%);
+  --very_dark_desaturated_blue: hsl(235, 24%, 19%);
+  --light_grayish_blue: hsl(234, 39%, 85%);
+  --light_grayish_blue_hover: hsl(236, 33%, 92%);
+  --dark_grayish_blue: hsl(234, 11%, 52%);
+  --very_dark_grayish_blue: hsl(233, 14%, 35%);
+  --very_dark_grayish_blue: hsl(237, 14%, 26%);
+      
+    // Primary Color
+  
+  --bright_blue: hsl(220, 98%, 61%);
+  --check_background: linear-gradient(132deg, rgba(87,221,255,1) 0%, rgba(192,88,243,1) 100%);
+
+  // BORDER
+  
+  --border_radius_100 : 4px;
+  --border_100 : 1px solid var(--light_grayish_blue);
+  --border_200 : 1px solid var(--very_dark_grayish_blue) ;
+  
+  // PADDING
+  
+  --padding_100 : 20px;
+  
+  --color_todo_title : var(--very_light_gray);
+}
+
+

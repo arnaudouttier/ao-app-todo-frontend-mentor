@@ -1,0 +1,46 @@
+@mixin block-box-shadow($color){
+  box-shadow: 3px 5px 11px -1px $color;
+-webkit-box-shadow: 3px 5px 11px -1px $color;
+-moz-box-shadow: 3px 5px 11px -1px $color;
+}
+
+@mixin check-btn($selector){
+  min-width: 25px;
+  min-height: 25px;
+  border: var(--border_100);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: none;
+  }
+
+  &:hover{
+    border : 1px solid var(--light_grayish_blue_hover);
+  }
+
+  &.#{$selector} {
+    background: rgb(87,221,255);
+    background: var(--check_background);
+    img {
+      display: block;
+      z-index : 99;
+    }
+  }
+}
+
+@mixin todo-cell($padding){
+  display: flex;
+  align-items: center;
+  padding: var(--padding_100);
+  background-color: var(--color_bg);
+  border-radius: var(--border_radius_100);
+}
+
+@mixin filter-btn{
+  font-size: 14px;
+  color: var(--color_primary);
+  font-weight: 700;
+}

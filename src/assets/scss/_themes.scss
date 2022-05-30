@@ -1,0 +1,21 @@
+@import 'mixins';
+
+:root, [data-theme="default"] {
+  --color_primary : var(--dark_grayish_blue);
+  --color_secondary : var(--very_dark_grayish_blue);
+  --color_bg: var(--very_light_gray);
+  --body_mobile_bg_image : url(~@/assets/images/bg-mobile-light.jpg);
+  --body_desktop_bg_image : url(~@/assets/images/bg-desktop-light.jpg);
+}
+
+
+
+[data-theme="dark"] {
+  --color_primary : var(--dark_grayish_blue);
+  --color_secondary : var(--light_grayish_blue);
+  --border_100 : 1px solid var(--very_dark_grayish_blue);
+  --color_bg: var(--very_dark_blue);
+  --body_mobile_bg_image: url(~@/assets/images/bg-mobile-dark.jpg);
+  --body_desktop_bg_image : url(~@/assets/images/bg-desktop-dark.jpg);
+  .todo-input,.todo-result, .todo-footer.todo-filter{@include block-box-shadow(hsl(235, 24%, 19%));}
+}
